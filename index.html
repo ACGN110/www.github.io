@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 2s;
+        }
+        .box{
+            background-color: #aff;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            animation: myMy 3s linear 0.5s infinite alternate;
+            
+        }
+        @keyframes myMy{
+            0%{border-radius: 0%;}
+            50%{border-radius: 50%; background-color: #afa;}
+            100%{border-radius: 100%;}
+        }
+        div:hover{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="box">www</div>
+</body>
+</html>
